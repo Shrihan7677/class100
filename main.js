@@ -15,8 +15,8 @@ recognition.onresult = function(event) {
     document.getElementById("textbox").innerHTML = Content;
     console.log(Content);
    
-    if(Content =="Take my selfie"){
-        console.log("Taking selfie");
+    if(Content == "take my selfie"){
+        console.log("taking selfie");
         speak();
     }
     }
@@ -55,7 +55,7 @@ function take_snapshot(){
 
 function save(){
     link= document.getElementById("link");
-    image=document.getElementById("selfie_image").src;
+    image=document.getElementById("selfie_img").src;
     link.href = image;
     link.click();
 }
